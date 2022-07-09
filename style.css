@@ -1,0 +1,170 @@
+/* font-family: 'Cinzel', serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Tangerine', cursive;
+font-family: 'The Nautigal', cursive;
+font-family: 'WindSong', cursive; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    }
+
+body {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+      }
+
+.hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+.selected-color {
+    color: rgb(38, 67, 67);
+ }
+
+.home {
+    position: relative;
+    background-image: url(./img/home-hq.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    z-index: 0;
+    }
+
+.home .text-main {
+    font-size: 7rem;
+    font-family: 'Tangerine', cursive;
+}
+.home .text-subtitle{
+    font-family: 'Cinzel', serif;
+    }
+
+    .home .text-motto {
+        font-size: 1.4rem;
+    }
+
+/* nawigacja */
+
+nav {
+    /* background-color: rgba(180, 228, 238, 0.237); */
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.4);
+    }
+
+.navbar-brand {
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    color: rgb(38, 67, 67);
+    font-weight: bold;
+    }
+
+    .navbar-brand i {
+        font-size: 1.2rem;
+           }
+
+.nav-item {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    }
+
+.dropdown-item {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.5rem;
+}
+[id] {
+    scroll-margin-top: 54.5px;
+}
+
+@media(min-width: 992px) {
+    [id]{
+    scroll-margin-top: 46px;
+}}
+
+main h2 {
+    text-transform: uppercase;
+}
+
+/* o nas  */
+
+.aboutus-img {
+    background-image: url(./img/aboutus.jpg);
+    height: 200px;
+        /* object-fit: cover; */
+    }
+
+    .aboutus-text-main {
+        font-size: 1.3rem;
+    }
+
+    .aboutus-text-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .aboutus-boxes i {
+        font-size: 3rem;
+    }
+
+    .card-color {
+        background-color: rgba(180, 228, 238, 0.501);
+    }
+
+    /* galeria  */
+
+    .carousel {
+                width: 60vw;
+    }
+
+    #gallery {
+        background-color: rgba(180, 228, 238, 0.223); 
+    }
+    @media(max-width: 768px) {
+        .carousel {
+            width: 90vw;
+}
+    }
+
+    /* oferty */
+
+    @media(min-width: 992px) {
+    .cards-oferts .card {
+        transition: .3s;
+    }
+    .cards-oferts .card:hover {
+        transform: scale(1.2);
+    }
+}
+
+    .card-body .btn {
+        background-color: rgba(180, 228, 238, 0.501);
+        text-transform: uppercase;
+    }
+
+    /* kontakt */
+
+    .contact {
+        background-color: rgba(178, 239, 222, 0.223); 
+    }
+
+    /* stopka */
+
+    footer {
+        background-color: rgba(38, 145, 115, 0.87);  
+        font-family: 'Cinzel', serif;
+        font-size: 1.1rem;
+    }
