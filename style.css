@@ -1,10 +1,3 @@
-/* font-family: 'Cinzel', serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Tangerine', cursive;
-font-family: 'The Nautigal', cursive;
-font-family: 'WindSong', cursive; */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,12 +7,12 @@ font-family: 'WindSong', cursive; */
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    }
+}
 
 body {
     position: relative;
     font-family: 'Playfair Display', serif;
-      }
+}
 
 .hero-shadow {
     position: absolute;
@@ -27,13 +20,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.45);
+    background-color: rgba(0, 0, 0, 0.45);
     z-index: -1;
 }
 
 .selected-color {
     color: rgb(38, 67, 67);
- }
+}
 
 .home {
     position: relative;
@@ -42,42 +35,46 @@ body {
     background-position: center;
     height: 90vh;
     z-index: 0;
-    }
+}
 
 .home .text-main {
-    font-size: 7rem;
+    font-size: 8rem;
     font-family: 'Tangerine', cursive;
 }
-.home .text-subtitle{
-    font-family: 'Cinzel', serif;
-    }
 
-    .home .text-motto {
-        font-size: 1.4rem;
-    }
+.home .text-subtitle {
+    font-family: 'Cinzel', serif;
+}
+
+.home .text-motto {
+    font-size: 2.2rem;
+}
+
+.home-home .btn {
+    font-size: 2rem;
+}
 
 /* nawigacja */
 
 nav {
-    /* background-color: rgba(180, 228, 238, 0.237); */
-    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.4);
-    }
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
 
 .navbar-brand {
     font-family: 'Tangerine', cursive;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(38, 67, 67);
     font-weight: bold;
-    }
+}
 
-    .navbar-brand i {
-        font-size: 1.2rem;
-           }
+.navbar-brand i {
+    font-size: 3rem;
+}
 
 .nav-item {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    }
+}
 
 .dropdown-item {
     font-size: 1.5rem;
@@ -87,84 +84,151 @@ nav {
 .navbar-toggler-icon {
     font-size: 1.5rem;
 }
+
 [id] {
-    scroll-margin-top: 54.5px;
+    scroll-margin-top: 56.25px;
 }
 
 @media(min-width: 992px) {
-    [id]{
-    scroll-margin-top: 46px;
-}}
+    [id] {
+        scroll-margin-top: 46px;
+    }
+}
 
 main h2 {
     text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 /* o nas  */
 
 .aboutus-img {
+    background-position: center;
+    background-size: cover;
     background-image: url(./img/aboutus.jpg);
-    height: 200px;
-        /* object-fit: cover; */
-    }
-
-    .aboutus-text-main {
-        font-size: 1.3rem;
-    }
-
-    .aboutus-text-subtitle {
-        font-size: 0.8rem;
-    }
-
-    .aboutus-boxes i {
-        font-size: 3rem;
-    }
-
-    .card-color {
-        background-color: rgba(180, 228, 238, 0.501);
-    }
-
-    /* galeria  */
-
-    .carousel {
-                width: 60vw;
-    }
-
-    #gallery {
-        background-color: rgba(180, 228, 238, 0.223); 
-    }
-    @media(max-width: 768px) {
-        .carousel {
-            width: 90vw;
+    height: 280px;
+    opacity: .9;
+    transition: opacity .3s, transform .3s;
 }
+
+.aboutus-img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media(max-width:1200px) {
+    .aboutus-img {
+        opacity: 1;
     }
 
-    /* oferty */
+    .aboutus-img:hover {
+        transform: scale(1);
 
-    @media(min-width: 992px) {
-    .cards-oferts .card {
+    }
+}
+
+.aboutus-img-active {
+    overflow: hidden;
+}
+
+.aboutus-text-main {
+    font-size: 1.6rem;
+}
+
+.aboutus-text-subtitle {
+    font-size: 1.3rem;
+}
+
+.aboutus-text-subtitle .btn {
+    font-size: 1.5rem;
+}
+
+.aboutus-boxes i {
+    font-size: 3rem;
+}
+
+.aboutus-boxes .card-title {
+    font-size: 2rem;
+}
+
+.aboutus-boxes .card-text {
+    font-size: 1.5rem;
+}
+
+.card-color {
+    background-color: rgba(180, 228, 238, 0.501);
+}
+
+/* galeria  */
+
+.carousel {
+    width: 60vw;
+}
+
+#gallery {
+    background-color: rgba(180, 228, 238, 0.223);
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+@media(max-width: 768px) {
+    .carousel {
+        width: 90vw;
+    }
+}
+
+/* oferty */
+
+.cards-offers .card-body .card-title {
+    font-size: 2rem;
+}
+
+.cards-offers .card-text {
+    font-size: 1.6rem;
+}
+
+
+@media(min-width: 1200px) {
+    .cards-offers .card {
         transition: .3s;
     }
-    .cards-oferts .card:hover {
+
+    .cards-offers .card:hover {
         transform: scale(1.2);
     }
 }
 
-    .card-body .btn {
-        background-color: rgba(180, 228, 238, 0.501);
-        text-transform: uppercase;
-    }
+.card-body .btn {
+    background-color: rgba(180, 228, 238, 0.501);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
 
-    /* kontakt */
+/* kontakt */
 
-    .contact {
-        background-color: rgba(178, 239, 222, 0.223); 
-    }
+.contact {
+    background-color: rgba(178, 239, 222, 0.223);
+}
 
-    /* stopka */
+.contact-info {
+    font-size: 1.6rem;
+}
 
-    footer {
-        background-color: rgba(38, 145, 115, 0.87);  
-        font-family: 'Cinzel', serif;
-        font-size: 1.1rem;
-    }
+.btn-contact {
+    font-size: 1.5rem;
+}
+
+/* stopka */
+
+footer {
+    background-color: rgba(38, 145, 115, 0.87);
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+}
