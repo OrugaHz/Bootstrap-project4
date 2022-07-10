@@ -38,7 +38,7 @@ body {
 }
 
 .home .text-main {
-    font-size: 8rem;
+    font-size: 9rem;
     font-family: 'Tangerine', cursive;
 }
 
@@ -47,17 +47,21 @@ body {
 }
 
 .home .text-motto {
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 
 .home-home .btn {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 /* nawigacja */
 
 nav {
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+    z-index: 2;
 }
 
 .navbar-brand {
@@ -206,7 +210,7 @@ h5 {
 }
 
 .card-body .btn {
-    background-color: rgba(180, 228, 238, 0.501);
+    /* background-color: rgba(180, 228, 238, 0.501); */
     text-transform: uppercase;
     font-size: 1.5rem;
 }
@@ -218,11 +222,18 @@ h5 {
 }
 
 .contact-info {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .btn-contact {
     font-size: 1.5rem;
+}
+
+.contact label,
+.contact input,
+.contact select,
+.contact textarea {
+    font-size: 1.6rem;
 }
 
 /* stopka */
@@ -231,4 +242,145 @@ footer {
     background-color: rgba(38, 145, 115, 0.87);
     font-family: 'Cinzel', serif;
     font-size: 1.6rem;
+}
+
+/* modal  */
+
+.modal-content {
+    background-color: rgb(228, 245, 248);
+}
+
+.modal .card-title {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.modal-content label,
+.modal-content select,
+.modal-content .new-user,
+.modal-content input {
+    font-size: 1.6rem;
+}
+
+.modal-content .btn {
+    font-size: 1.5rem;
+}
+
+.btn-outline-dark {
+    background-color: rgba(180, 228, 238, 0.223)
+}
+
+/* cookies */
+
+.hide {
+    display: none;
+}
+
+.cookie-box {
+    position: fixed;
+    bottom: 0;
+    padding: 2em;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: show-cookies .5s .5s forwards;
+    background-color: rgb(192, 233, 219);
+    z-index: 20;
+}
+
+.cookie-box::before {
+    position: absolute;
+    top: -130px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    background-image: url(./img/cookie.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.cookie-btn {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(38, 145, 115, 0.87);
+    color: #fff;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.cookie-btn:hover {
+    background-color: #000;
+}
+
+@keyframes show-cookies {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.policy {
+    text-decoration: none;
+    color: #000
+}
+
+.policy:hover {
+    color: rgb(38, 67, 67);
+}
+
+@media(max-width:1200px) {
+    .cookie-box {
+        font-size: 1.2rem;
+    }
+
+    .cookie-box::before {
+        top: -45px;
+        right: 50px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ----------podstrona policy------- */
+
+.policy-title {
+    font-size: 5rem;
+}
+
+@media(max-width:1200px) {
+    .policy-title {
+        font-size: 3rem;
+    }
+}
+
+.statute-text,
+.policy-text {
+    font-size: 1.6rem;
+}
+
+.policy-header-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.home-logo {
+    border-bottom: 1px solid black;
+}
+
+.home-logo a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: rgb(38, 67, 67);
+}
+
+.home-logo a:hover {
+    color: black
 }
